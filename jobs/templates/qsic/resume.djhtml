@@ -1,0 +1,817 @@
+{% extends "base.djhtml" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<div class="bg-sky-50 print:bg-white py-0 sm:py-16 print:p-0">
+  <div
+    class="container mx-auto bg-white print:p-0 rounded-md print:rounded-none shadow-lg print:shadow-none text-gray-800 max-w-4xl text-base print:text-sm"
+  >
+    <div
+      class="flex flex-col items-start sm:flex-row gap-8 justify-between print:hidden text-sm p-8 -mb-16"
+    >
+      <div class="flex items-center">
+        <div class="flex items-center">
+          <a
+            href="/j/lookahead/3916206"
+            data-phx-link="redirect"
+            data-phx-link-state="push"
+            class="flex items-center gap-1 hover:underline font-bold"
+            data-bcup-haslogintext="no"
+          >
+            <span class="hero-home w-5! h-5!"></span>
+            Resume
+          </a>
+        </div>
+        <div class="flex items-center">
+          <span class="hero-chevron-right w-4! h-4! mx-1"></span>
+
+          <a
+            href="/j/lookahead/3916206/letter"
+            data-phx-link="redirect"
+            data-phx-link-state="push"
+            class="flex items-center gap-1 hover:underline hover:text-sky-600"
+            data-bcup-haslogintext="no"
+          >
+            <span class="hero-envelope w-5! h-5!"></span>
+            Letter
+          </a>
+        </div>
+      </div>
+
+      <button
+        onclick="window.print()"
+        class="flex items-center px-4 py-2 bg-sky-600 text-white font-semibold rounded-lg shadow-md hover:bg-sky-400 transition cursor-pointer print:hidden"
+        data-bcup-haslogintext="no"
+      >
+        <span class="hero-printer w-5! h-5! mr-2"></span> Print
+      </button>
+    </div>
+
+    <div class="grid gap-10 print:gap-6 py-16 px-8 print:p-0">
+      <section class="grid gap-2">
+        <h1 class="text-3xl print:text-xl font-semibold">Hamish Murphy</h1>
+        <p>Devonport, Tasmania</p>
+        <div>
+          <p>
+            <a
+              href="https://github.com/mitkins"
+              data-phx-link="redirect"
+              data-phx-link-state="push"
+              target="_blank"
+              class="inline-flex items-center gap-2 hover:text-sky-600 hover:underline"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="w-4.5 h-[1lh] mr-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                ></path>
+              </svg>
+              https://github.com/mitkins
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/hamishmurphy"
+              data-phx-link="redirect"
+              data-phx-link-state="push"
+              target="_blank"
+              class="inline-flex items-center gap-2 hover:text-sky-600 hover:underline"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="w-4.5 h-[1lh] mr-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                ></path>
+              </svg>
+              https://www.linkedin.com/in/hamishmurphy
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section class="grid gap-2">
+        <h1 class="text-2xl print:text-lg font-semibold uppercase">
+          Profile
+        </h1>
+        <p>
+          Senior Software Engineer with broad experience across desktop, mobile, and
+          web platforms. Work includes backend APIs, infrastructure automation,
+          hardware-interfacing projects, and systems integration. Responsibilities
+          have consistently involved customer support, DevOps and working across the
+          full software life cycle.
+        </p>
+        <p>
+          Experience includes infrastructure provisioning in AWS and Azure,
+          automation using CI/CD pipelines and contributions to both product-based
+          and client-based systems. Past projects have incorporated physical device
+          interaction, Linux administration, and observability/data analytics
+          tooling.
+        </p>
+      </section>
+
+      <section class="grid gap-2">
+        <h1 class="text-2xl print:text-lg font-semibold uppercase">
+          Key Skills
+        </h1>
+        <ul class="list-disc pl-7 sm:pl-10 space-y-2">
+          <li>
+            20+ years software development experience (web, mobile and desktop)
+          </li>
+          <li>
+            Currently using Augment for agentic coding. ChatGPT and Claude.io for
+            research
+          </li>
+          <li>Customer support</li>
+          <li>Stakeholder engagement</li>
+          <li>
+            Collaborative/creative thinker who enjoys cross-functional teamwork
+          </li>
+          <li>
+            <span class="font-semibold">Backend/API Development:</span>
+            Python (FastAPI/Flask), Elixir/Phoenix, ASP.NET Core, Node.js. Learning:
+            Django
+          </li>
+          <li>
+            <span class="font-semibold">Infrastructure:</span>
+            AWS (EC2, RDS, Beanstalk, VPC, Route53, CloudFormation), Azure, Azure
+            ACI (similar to AWS ECS), Terraform, Docker
+          </li>
+          <li>
+            <span class="font-semibold">CI/CD &amp; DevOps:</span>
+            GitHub Actions, GitLab CI, automated testing, Linux system
+            administration
+          </li>
+          <li>
+            <span class="font-semibold">Observability &amp; Data:</span>
+            Grafana, Power BI, InfluxDB, Azure Data Explorer
+          </li>
+          <li>
+            <span class="font-semibold">Languages:</span>
+            C#, Python, JavaScript, Elixir, Bash. Learning: Golang
+          </li>
+          <li>
+            <span class="font-semibold">Database:</span> Postgres, SQL Server,
+            MongoDB, Sqlite
+          </li>
+          <li>
+            <span class="font-semibold">Real-time and streaming systems:</span>
+            SignalR, analytics pipelines, IoT telemetry
+          </li>
+          <li>
+            <span class="font-semibold">Other:</span> ArcGIS, SCIM, Azure AD B2C
+          </li>
+        </ul>
+      </section>
+
+      <section class="grid gap-2">
+        <h1 class="text-2xl print:text-lg font-semibold uppercase">
+          Projects/Hardware Experience
+        </h1>
+        <ul class="list-disc pl-7 sm:pl-10 space-y-2">
+          <li>Networking fundamentals (TCP/IP, HTTP)</li>
+          <li>
+            Developed Android Bluetooth printer driver to work with a Bixolon
+            SPP-R200 to allow Parking Officers to print infringement tickets
+          </li>
+          <li>
+            Worked on Python AI/ML solution with NVIDIA Jetson Nano/Raspberry Pi
+            Camera to identify heavy vehicles
+          </li>
+          <li>
+            Created C++ application to control a weigh bridge over a 50m serial
+            cable
+          </li>
+          <li>This website is running on Django</li>
+        </ul>
+      </section>
+
+      <section class="grid gap-2">
+        <h1 class="text-2xl print:text-lg font-semibold uppercase">
+          Work History
+        </h1>
+
+        <div class="grid gap-16 print:gap-6">
+          <article class="grid gap-3">
+            <h1
+              class="text-xl print:text-base font-semibold hidden md:flex justify-between"
+            >
+              <div>Full Stack Developer – Petal Framework (Remote)</div>
+              <div>Feb 2023 – Current</div>
+            </h1>
+            <div class="md:hidden">
+              <h1 class="text-xl print:text-base font-semibold">
+                Full Stack Developer - Petal Framework (Remote)
+              </h1>
+              <p>Feb 2023 – Current</p>
+            </div>
+            <p class="text-xs leading-6">
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Elixir
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Phoenix LiveView
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Tailwind
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                JavaScript
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Postgres
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Fly.io
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                GitHub Actions
+              </span>
+              <span> </span>
+            </p>
+
+            <ul class="list-disc pl-7 sm:pl-10 space-y-2">
+              <li>
+                Contributed to Petal Pro (paid Elixir boilerplate) and Petal
+                Components (open source)
+              </li>
+              <li>
+                Maintained and improved codebase - Elixir, Phoenix, and Tailwind
+              </li>
+              <li>Created Petal Pro API for Elixir developers</li>
+              <li>Implemented CMS features and Stripe integration</li>
+              <li>Maintained CI/CD pipelines and managed Fly.io deployments</li>
+              <li>Provided community and customer support</li>
+            </ul>
+          </article>
+
+          <article class="grid gap-3">
+            <h1
+              class="text-xl print:text-base font-semibold hidden md:flex justify-between"
+            >
+              <div>Senior Software Engineer – Synengco (Remote)</div>
+              <div>Oct 2023 – Jun 2024</div>
+            </h1>
+            <div class="md:hidden">
+              <h1 class="text-xl print:text-base font-semibold">
+                Senior Software Engineer - Synengco (Remote)
+              </h1>
+              <p>Oct 2023 – Jun 2024</p>
+            </div>
+            <p class="text-xs leading-6">
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Python
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Elixir
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                MongoDB
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                GraphQL
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Terraform
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                GitLab CI/CD
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Docker
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Azure
+              </span>
+              <span> </span>
+            </p>
+            <p class="text-sm print:text-xs text-gray-700">
+              Sentient System is a software platform that supports decision making
+              for complex assets. Decision makers can create a Digital Twin of their
+              asset systems. Through real-time monitoring users can compare intended
+              operational state with actual performance. Predictive Modelling and
+              Machine Learning provide a means to compare and contrast ”what if”
+              scenarios.
+            </p>
+
+            <ul class="list-disc pl-7 sm:pl-10 space-y-2">
+              <li>
+                Provided technical expertise for transforming consulting-based
+                business into a SaaS platform for Stanwell's Hydrogen factory
+              </li>
+              <li>
+                Developed microservices and integrated third-party tools such as
+                Draw.IO and Apollo GraphQL
+              </li>
+              <li>
+                Developed APIs for microservice architecture with FastAPI and Flask
+              </li>
+              <li>
+                Set up containerised environments and CI/CD pipelines using GitLab
+                and Terraform
+              </li>
+              <li>
+                Created deployment strategies for dev, test, staging (Docker
+                provider) and production (Azure provider/Azure Container Instances)
+              </li>
+              <li>
+                Implemented Elixir/ETS cache. In-memory cache reflects object
+                data/graph, providing instant search
+              </li>
+              <li>
+                Implemented LLM search based on Elixir, Postgres, pgvector and
+                OpenAI. Part of Sentient System is knowledge capture. This feature
+                enables knowledge sharing
+              </li>
+              <li>
+                Provided guidance/mentorship for students during their internship
+              </li>
+            </ul>
+          </article>
+
+          <article class="grid gap-3">
+            <h1
+              class="text-xl print:text-base font-semibold hidden md:flex justify-between"
+            >
+              <div>Senior Software Engineer – pitt&amp;sherry (Hybrid)</div>
+              <div>May 2016 – Oct 2023</div>
+            </h1>
+            <div class="md:hidden">
+              <h1 class="text-xl print:text-base font-semibold">
+                Senior Software Engineer - pitt&amp;sherry (Hybrid)
+              </h1>
+              <p>May 2016 – Oct 2023</p>
+            </div>
+            <p class="text-xs leading-6">
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                C#
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                ASP.NET Core
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                API
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                SQL Server
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                GitHub Actions
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                AWS
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Azure
+              </span>
+              <span> </span>
+            </p>
+            <p class="text-sm print:text-xs text-gray-700">
+              AssetAsyst is mission critical bridge and road asset management
+              software for local and state government. It is used by the Department
+              of State Growth, the City of Melbourne and the West Gate Bridge.
+            </p>
+
+            <ul class="list-disc pl-7 sm:pl-10 space-y-2">
+              <li>Maintained and modernised Windows application</li>
+              <li>
+                Migrated AssetAsyst desktop to AWS utilising AppStream 2.0.
+                Streaming sessions were managed via an ASP.NET Core app hosted on an
+                EC2 with Dokku
+              </li>
+              <li>
+                Developed Xamarin Forms application targeting Android, iOS, and UWP
+              </li>
+              <li>
+                Prototyped Azure analytics to ingest IoT telemetry via Data Explorer
+                and visualise engineering outputs using Grafana and Power BI
+              </li>
+              <li>
+                In team that developed prototype to recognise heavy vehicles via
+                AI/ML using an NVIDIA Jetson Nano and a Raspberry Pi Camera
+                (implemented in Python using SSD Mobilenet and the Tensor Flow
+                Object Detection API). This allowed us to correlate sensor readings
+                to a heavy vehicle when it crossed the bridge
+              </li>
+              <li>
+                Contributed to predictive modelling and heavy vehicle analysis
+                algorithms (bending moment calculation)
+              </li>
+              <li>
+                Led migration of AssetAsyst to a cloud-native architecture using
+                Azure services - ASP.NET Core, Blazor, Azure Functions, SignalR,
+                Azure Service Bus, Azure SQL Server and Azure Storage
+              </li>
+              <li>Developed mobile API with ASP.NET Core MVC</li>
+              <li>
+                Designed and implemented ETL pipelines to consolidate customer data
+                from on-premise systems into Azure SQL and Azure Storage
+              </li>
+              <li>
+                Created multi-tenant SSO with Azure AD B2C, including custom
+                policies to support client Entra ID linkage and SCIM-based user
+                provisioning
+              </li>
+              <li>
+                Created CI/CD pipelines with GitHub Actions for deployment and
+                testing
+              </li>
+              <li>
+                Collaborated with the Asset Institute on the ISBM for the Department
+                of Transport and Main Roads, Queensland. Created the C# version of
+                the ISBM Adapter (ASP.NET Core backed by Hangfire) implementing
+                request/response and pub/sub protocols. More on ISBM can be found at
+                https://www.mimosa.org/openom-ws-isbm
+              </li>
+              <li>
+                Provided Australia-wide customer support across local and state
+                government agencies
+              </li>
+              <li>
+                Resolved critical support issues. E.g. identified and resolved
+                complex data sync issue for Aurizon restoring user confidence
+              </li>
+              <li>
+                Mentored staff and interns, contributing to team capability and
+                knowledge sharing
+              </li>
+            </ul>
+          </article>
+
+          <article class="grid gap-3">
+            <h1
+              class="text-xl print:text-base font-semibold hidden md:flex justify-between"
+            >
+              <div>Senior Engineer – Astaricks (Onsite)</div>
+              <div>Oct 2011 – May 2016</div>
+            </h1>
+            <div class="md:hidden">
+              <h1 class="text-xl print:text-base font-semibold">
+                Senior Engineer - Astaricks (Onsite)
+              </h1>
+              <p>Oct 2011 – May 2016</p>
+            </div>
+            <p class="text-xs leading-6">
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                C#
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Android
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Docker
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                AWS
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Bash
+              </span>
+              <span> </span>
+            </p>
+            <p class="text-sm print:text-xs text-gray-700">
+              Astaricks was a digital business card/marketing system (B2B and B2C).
+              Originally designed for sharing business cards at an expo, Astaricks
+              pivoted into a Real Estate platform.
+            </p>
+
+            <ul class="list-disc pl-7 sm:pl-10 space-y-2">
+              <li>
+                Created .NET WPF application and Android app for a digital business
+                card system
+              </li>
+              <li>Integrated apps with the Astaricks API</li>
+              <li>
+                Provided Linux system administration and DevOps support (VPC, EC2,
+                Security Groups, RDS and Route53)
+              </li>
+              <li>
+                Implemented custom provisioning for Elastic Beanstalk instances
+                (Bash)
+              </li>
+              <li>
+                Worked on CloudFormation script to automate creation of the
+                Astaricks platform on staging and production environments
+              </li>
+              <li>Mentored iOS developer</li>
+            </ul>
+          </article>
+
+          <article class="grid gap-3">
+            <h1
+              class="text-xl print:text-base font-semibold hidden md:flex justify-between"
+            >
+              <div>Software Developer – Devonport City Council (Onsite)</div>
+              <div>Nov 2006 – Oct 2011</div>
+            </h1>
+            <div class="md:hidden">
+              <h1 class="text-xl print:text-base font-semibold">
+                Software Developer - Devonport City Council (Onsite)
+              </h1>
+              <p>Nov 2006 – Oct 2011</p>
+            </div>
+            <p class="text-xs leading-6">
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                C#
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                ASP.NET
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Android
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Linux
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                SQL Server
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Technology One
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                ArcGIS
+              </span>
+              <span> </span>
+            </p>
+
+            <ul class="list-disc pl-7 sm:pl-10 space-y-2">
+              <li>
+                Post employment, developed and maintained a Bluetooth printer driver
+                for Android that's used by Council Parking Officers. An Android app
+                captured output from a pdf, rastarised the document and used the
+                driver to print out the infringement ticket
+              </li>
+              <li>
+                Provided software development and integration services across core
+                systems such as T1 Property &amp; Rating, T1 Finance, T1 Works &amp;
+                Assets, ArcGIS and HP TRIM
+              </li>
+              <li>Linix and database administration</li>
+            </ul>
+          </article>
+
+          <article class="grid gap-3">
+            <h1
+              class="text-xl print:text-base font-semibold hidden md:flex justify-between"
+            >
+              <div>Software Consultant – Parallel Solutions (Onsite)</div>
+              <div>Dec 1996 – Nov 2006</div>
+            </h1>
+            <div class="md:hidden">
+              <h1 class="text-xl print:text-base font-semibold">
+                Software Consultant - Parallel Solutions (Onsite)
+              </h1>
+              <p>Dec 1996 – Nov 2006</p>
+            </div>
+            <p class="text-xs leading-6">
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                C#
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                C++ Builder
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Embedded Systems
+              </span>
+              <span> </span>
+
+              <span
+                class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase whitespace-nowrap"
+              >
+                Linux
+              </span>
+              <span> </span>
+            </p>
+
+            <ul class="list-disc pl-7 sm:pl-10 space-y-2">
+              <li>
+                Delivered software development, system administration, and technical
+                support for a large number of local businesses - including schools,
+                primary industry and logistic companies
+              </li>
+              <li>
+                Created mobile solution using PocketPC embedded OS. Used to track
+                stock in a warehouse for logistics company Wakefield Transport
+              </li>
+              <li>
+                Created C++ Builder app to control weigh bridge via a 50m serial
+                cable. Webster Limited used this to check the weight of their trucks
+                before leaving site
+              </li>
+              <li>
+                Integrated a desktop app with an Abalone grading machine (embedded
+                Windows)
+              </li>
+              <li>Worked on a custom POS application</li>
+              <li>Linux administration</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid gap-2">
+        <h1 class="text-2xl print:text-lg font-semibold uppercase">
+          Education
+        </h1>
+
+        <article class="grid gap-3">
+          <h1
+            class="text-xl print:text-base font-semibold hidden md:flex justify-between"
+          >
+            <div>BA Applied Computing – University of Tasmania</div>
+            <div>1996</div>
+          </h1>
+          <div class="md:hidden">
+            <h1 class="text-xl print:text-base font-semibold">
+              BA Applied Computing
+            </h1>
+            <p>University of Tasmania</p>
+            <p>1996</p>
+          </div>
+          <h1
+            class="text-xl print:text-base font-semibold flex justify-between text-gray-600 uppercase"
+          ></h1>
+          <p class="text-xs leading-6">
+            <span
+              class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase"
+            >
+              C </span
+            ><span
+              class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase"
+            >
+              C++ </span
+            ><span
+              class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase"
+            >
+              Perl </span
+            ><span
+              class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase"
+            >
+              DBMS </span
+            ><span
+              class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase"
+            >
+              Multimedia </span
+            ><span
+              class="rounded-full px-2 py-0.5 mr-1 bg-sky-100 text-sky-700 uppercase"
+            >
+              Language Design
+            </span>
+          </p>
+          <p class="text-sm print:text-xs text-gray-600">
+            Invited to complete honours degree and employed by the university over
+            summer 1995-1996
+          </p>
+        </article>
+      </section>
+    </div>
+  </div>
+</div>
+{% endblock %}
