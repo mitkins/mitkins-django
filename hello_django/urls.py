@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import include, path
+from django.conf import settings
 
 def hello(request):
     return HttpResponse("Hello, Mitkins!")
@@ -27,3 +28,9 @@ urlpatterns = [
     path("j/", include("jobs.urls")),
     path("", hello, name="hello"),
 ]
+
+if settings.DEBUG:
+    # Include django_browser_reload URLs only in DEBUG mode
+    urlpatterns += [
+        path("__reload__/", include("django_browser_reload.urls")),
+    ]
