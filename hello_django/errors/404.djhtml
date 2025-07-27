@@ -4,6 +4,6 @@
 
 {% block content %}
 <div class="bg-blue-200 grid h-[100dvh] place-items-center">
-  <img src="https://www.gravatar.com/avatar/89d70012ba51ecaefceb24de8daaedc6?size=150" class="rounded-full border-gray-50 border-8 shadow-lg">
+  <h1 class="text-9xl font-semibold text-gray-700 text-shadow-lg uppercase">404 - Not Found</h1>
 </div>
 {% endblock %}
