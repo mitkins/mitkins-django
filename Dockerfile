@@ -4,6 +4,7 @@ FROM python:${PYTHON_VERSION}
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+ENV DJANGO_ENV "prod"
 
 RUN mkdir -p /code
 
@@ -11,9 +12,9 @@ WORKDIR /code
 
 COPY requirements.txt /tmp/requirements.txt
 RUN set -ex && \
-    pip install --upgrade pip && \
-    pip install -r /tmp/requirements.txt && \
-    rm -rf /root/.cache/
+  pip install --upgrade pip && \
+  pip install -r /tmp/requirements.txt && \
+  rm -rf /root/.cache/
 COPY . /code
 
 # Install Node.js for building Tailwind CSS
