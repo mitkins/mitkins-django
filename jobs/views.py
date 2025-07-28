@@ -1,4 +1,9 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-    return HttpResponse("Hello, Mitkins. You're at the jobs index.")
+def qsic_resume(request):
+    context = {"title": "Resume · QSIC · Hamish Murphy"}
+    return render(request, "qsic/resume.djhtml", context)
+
+def qsic_letter(request):
+    context = {"title": "Letter · QSIC · Hamish Murphy"}
+    return render(request, "qsic/letter.djhtml", context)

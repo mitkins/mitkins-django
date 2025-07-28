@@ -1,0 +1,9 @@
+{% extends "base.djhtml" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="bg-blue-200 grid h-[100dvh] place-items-center">
+  <h1 class="text-9xl font-semibold text-gray-700 text-shadow-lg uppercase">404 - Not Found</h1>
+</div>
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends "base.djhtml" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<div class="bg-sky-50 print:bg-white py-0 sm:py-16 print:p-0">
+  <div
+    class="container mx-auto bg-white print:p-0 rounded-md print:rounded-none shadow-lg print:shadow-none text-gray-800 max-w-4xl text-base print:text-sm"
+  >
+    <div
+      class="flex flex-col items-start sm:flex-row gap-8 justify-between print:hidden text-sm p-8 -mb-16"
+    >
+      <div class="flex items-center">
+        <div class="flex items-center">
+          <a
+            href="/j/lookahead/3916206"
+            data-phx-link="redirect"
+            data-phx-link-state="push"
+            class="flex items-center gap-1 hover:underline hover:text-sky-600"
+          >
+            <span class="hero-home w-5! h-5!"></span>
+            Resume
+          </a>
+        </div>
+        <div class="flex items-center">
+          <span class="hero-chevron-right w-4! h-4! mx-1"></span>
+
+          <a
+            href="/j/lookahead/3916206/letter"
+            data-phx-link="redirect"
+            data-phx-link-state="push"
+            class="flex items-center gap-1 hover:underline font-bold"
+          >
+            <span class="hero-envelope w-5! h-5!"></span>
+            Letter
+          </a>
+        </div>
+      </div>
+
+      <button
+        onclick="window.print()"
+        class="flex items-center px-4 py-2 bg-sky-600 text-white font-semibold rounded-lg shadow-md hover:bg-sky-400 transition cursor-pointer print:hidden"
+      >
+        <span class="hero-printer w-5! h-5! mr-2"></span> Print
+      </button>
+    </div>
+
+    <div class="grid gap-10 print:gap-6 py-16 px-8 print:p-0">
+      <section>
+        <p class="font-semibold">Hamish Murphy</p>
+        <p>Devonport, Tasmania</p>
+        <p>Australia. 7310</p>
+      </section>
+
+      <section>
+        <p>28th July 2025</p>
+      </section>
+
+      <section class="grid gap-6">
+        <p>Dear QSIC Hiring Team,</p>
+
+        <p>
+          I’m writing to apply for the Senior/Lead Software Engineer position at
+          QSIC. I’m a Senior Software Engineer based on the east coast of
+          Australia and have experience across cloud infrastructure, application
+          development and systems involving hardware integration.
+        </p>
+
+        <p>
+          I developed and maintained a Bluetooth printer driver for Android
+          that's used by Council parking officers to print infringement tickets,
+          involving hands-on experience with hardware communication protocols
+          and reliability challenges with hardware devices out in the field.
+        </p>
+
+        <p>
+          In past roles, I’ve worked extensively with AWS - EC2, RDS, VPC, Route
+          53, CloudFormation and Elastic Beanstalk. I’ve used Terraform for
+          infrastructure, CI/CD pipelines for deployment automation and provided
+          DevOps/production support. My focus on customer support and
+          operational reliability has shaped my interest in monitoring, uptime
+          and system resilience.
+        </p>
+
+        <p>
+          At pitt&amp;sherry I helped develop AssetAsyst, a platform for
+          managing road and bridge assets. I led the migration from a desktop
+          application to a cloud-native system in Azure and developed supporting
+          APIs/web interfaces. As part of a sensor analytics project, I
+          evaluated data processing tools and chose Azure Data Explorer over
+          Synapse to significantly reduce costs while meeting performance needs.
+          I also explored InfluxDB and visualised outputs using Grafana and
+          Power BI.
+        </p>
+
+        <p>
+          Other work includes prototyping AI-based vehicle detection using a
+          Jetson Nano and Raspberry Pi camera, implementing predictive modelling
+          based on engineering formulas and creating a C# adapter for an
+          enterprise service bus. I’ve developed APIs in Python, .NET, Elixir
+          and Node.js. I have experience supporting and maintaining systems in
+          production.
+        </p>
+
+        <p>
+          I'm excited by QSIC's focus on AI-powered in-store streaming and the
+          scale of its hardware fleet. I’d value the opportunity to bring my
+          experience to the team and contribute to the systems that power it.
+        </p>
+
+        <p>Kind regards,</p>
+
+        <p>Hamish Murphy</p>
+      </section>
+    </div>
+  </div>
+</div>
+{% endblock %}

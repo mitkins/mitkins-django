@@ -1,0 +1,9 @@
+{% extends "base.djhtml" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="bg-blue-200 grid h-[100dvh] place-items-center">
+  <img src="https://www.gravatar.com/avatar/89d70012ba51ecaefceb24de8daaedc6?size=150" class="rounded-full border-gray-50 border-8 shadow-lg">
+</div>
+{% endblock %}
